@@ -6,23 +6,28 @@
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
+position = Vector2(2, 0)
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -1.0
-offset_right = 1152.0
-offset_bottom = 647.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = -124.0
+offset_top = -77.0
+offset_right = 1293.0
+offset_bottom = 718.0
 
 [node name="Player" parent="." instance=ExtResource("1_7yifr")]
 position = Vector2(570, 349)
 
 [node name="PineTree" parent="." instance=ExtResource("2_ige1e")]
-position = Vector2(353, 514)
+position = Vector2(147, 636)
 
 [node name="PineTree2" parent="." instance=ExtResource("2_ige1e")]
-position = Vector2(209, 347)
+position = Vector2(89, 303)
 
 [node name="PineTree3" parent="." instance=ExtResource("2_ige1e")]
-position = Vector2(392, 183)
+position = Vector2(341, 191)
 
 [node name="PineTree4" parent="." instance=ExtResource("2_ige1e")]
 position = Vector2(889, 174)
@@ -37,16 +42,25 @@ position = Vector2(958, 201)
 position = Vector2(993, 443)
 
 [node name="PineTree8" parent="." instance=ExtResource("2_ige1e")]
-position = Vector2(794, 602)
+position = Vector2(1085, 690)
 
 [node name="PineTree9" parent="." instance=ExtResource("2_ige1e")]
 position = Vector2(680, 211)
 
 [node name="PineTree10" parent="." instance=ExtResource("2_ige1e")]
-position = Vector2(494, 620)
+position = Vector2(470, 480)
 
 [node name="mob_slime" parent="." instance=ExtResource("3_biogv")]
-position = Vector2(1024, 321)
+position = Vector2(859, 378)
 
 [node name="mob_slime2" parent="." instance=ExtResource("3_biogv")]
-position = Vector2(990, 561)
+position = Vector2(874, 693)
+
+[node name="mob_slime3" parent="." instance=ExtResource("3_biogv")]
+position = Vector2(210, 360)
+
+[node name="mob_slime6" parent="." instance=ExtResource("3_biogv")]
+position = Vector2(307, 637)
+
+[node name="mob_slime7" parent="." instance=ExtResource("3_biogv")]
+position = Vector2(554, 118)

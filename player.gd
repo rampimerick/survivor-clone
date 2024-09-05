@@ -11,3 +11,4 @@ func _physics_process(delta):
 		%HappyBoo.play_walk_animation()
 	else:
 		%HappyBoo.play_idle_animation()
+		
