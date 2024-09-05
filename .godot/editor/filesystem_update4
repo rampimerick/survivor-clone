@@ -1,3 +1,6 @@
+res://game.tscn
+res://player.tscn
+res://pine_tree.tscn
+res://mob_slime.tscn
+res://gun.tscn
 res://bullet.tscn
-res://bullet.gd
-res://gun.gd

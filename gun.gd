@@ -10,4 +10,3 @@ func _physics_process(delta):
 
 func shoot():
 	load("res://bullet.tscn")
-	load(¨)
