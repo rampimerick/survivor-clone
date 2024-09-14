@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bxevffk00owaa"]
+[gd_scene load_steps=5 format=3 uid="uid://bxevffk00owaa"]
 
 [ext_resource type="PackedScene" uid="uid://df432umertch8" path="res://player.tscn" id="1_7yifr"]
 [ext_resource type="Script" path="res://game.gd" id="1_8c4gn"]
 [ext_resource type="PackedScene" uid="uid://bxyy06v5b4n41" path="res://pine_tree.tscn" id="2_ige1e"]
-[ext_resource type="PackedScene" uid="uid://ix16xfutrq7s" path="res://hit_count_powerup.tscn" id="3_04ak1"]
 
 [sub_resource type="Curve2D" id="Curve2D_gr45k"]
 _data = {
@@ -113,9 +112,6 @@ theme_override_font_sizes/font_size = 48
 text = "VOCÊ MORREU"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="Hit_count_powerup" parent="." instance=ExtResource("3_04ak1")]
-position = Vector2(1639, 694)
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

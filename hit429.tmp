@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr5h7gm8mhccn"]
+
+[ext_resource type="Script" path="res://hit_count_powerup.gd" id="1_01tmv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjn7k"]
+
+[node name="Hit_count_powerup" type="Area2D"]
+collision_layer = 4
+script = ExtResource("1_01tmv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gjn7k")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -9.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 7.0
+color = Color(0.45883, 0.000148868, 0.459343, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

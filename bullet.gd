@@ -3,6 +3,7 @@ extends Area2D
 
 
 var travalled_distance = 0
+var hit_count = 1;
 
 func _physics_process(delta: float):
 	const SPEED = 800
@@ -16,6 +17,10 @@ func _physics_process(delta: float):
 		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
-	queue_free()
 	if body.has_method("take_damage"):
+		hit_count -= 1;
 		body.take_damage()
+	else:
+		hit_count = 0
+	if hit_count == 0:
+		queue_free()
